@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#bdcbad",
+            "on-error-container": "#93000a",
+            "surface": "#fbf9f5",
+            "outline-variant": "#c5c8bd",
+            "on-tertiary": "#ffffff",
+            "on-primary-container": "#f9ffed",
+            "secondary": "#5b6050",
+            "on-secondary-fixed-variant": "#444939",
+            "surface-variant": "#e4e2de",
+            "on-tertiary-container": "#fffbff",
+            "tertiary-container": "#797467",
+            "outline": "#75786f",
+            "on-tertiary-fixed-variant": "#4a473b",
+            "on-surface": "#1b1c1a",
+            "on-primary-fixed-variant": "#3e4b33",
+            "on-secondary-fixed": "#191d10",
+            "tertiary-fixed": "#e9e2d1",
+            "secondary-fixed": "#e0e5d0",
+            "on-secondary-container": "#616656",
+            "secondary-fixed-dim": "#c4c9b5",
+            "on-error": "#ffffff",
+            "tertiary": "#605c4f",
+            "primary-fixed": "#d9e8c8",
+            "surface-tint": "#55624a",
+            "inverse-primary": "#bdcbad",
+            "primary": "#536047",
+            "on-secondary": "#ffffff",
+            "on-primary": "#ffffff",
+            "on-primary-fixed": "#131f0b",
+            "surface-dim": "#dbdad6",
+            "error": "#ba1a1a",
+            "surface-container-highest": "#e4e2de",
+            "surface-container-high": "#eae8e4",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-fixed": "#1e1b11",
+            "tertiary-fixed-dim": "#cdc6b6",
+            "surface-container": "#f0eeea",
+            "secondary-container": "#e0e5d0",
+            "surface-bright": "#fbf9f5",
+            "inverse-on-surface": "#f2f0ec",
+            "primary-container": "#6b795f",
+            "error-container": "#ffdad6",
+            "inverse-surface": "#30312e",
+            "on-background": "#1b1c1a",
+            "surface-container-low": "#f5f3ef",
+            "background": "#fbf9f5",
+            "on-surface-variant": "#454840"
+          },
+          fontFamily: {
+            "headline": ["Manrope", "sans-serif"],
+            "body": ["Manrope", "sans-serif"],
+            "label": ["Manrope", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <!-- Top Navigation -->
+  <nav
+    class="fixed top-0 w-full z-50 bg-[#fbf9f5]/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(27,28,26,0.05)] transition-colors duration-300">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center gap-3">
+        <img alt="Logo Edén Terrassa" class="h-10 w-auto" data-alt="Minimalist elegant church logo symbol"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0g-O-WNEarxYIQ-fFxI1VBoPdSdoV4wW4RCcJDaxPVlBUVE0VDM13w7JmKqk0Z4FC9IHQZgKxqjdIyrUG_nFX3O8MeVZ_scMPmrJi-giu3s3uIGsDC2-xsD3oHviqozIueH54shPazpyU8uPsCVHRPM9Q_GOAcqyVQDuT3HToIrNrsOf9qIkPAfb2ivWtxKvWuOMH8XEKcoTmqQYxYG70YS5ffuKNY-O9odQwpgelrzlf_DFa8ZdQ8QI8dCejqFg1LmsqqCP3fnk" />
+        <span class="text-2xl font-extrabold tracking-tighter text-[#536047]">Edén Terrassa</span>
+      </div>
+      <div class="hidden md:flex gap-10 font-manrope text-sm font-medium tracking-wide">
+        <a class="text-[#536047] border-b-2 border-[#78866b] pb-1" href="#">Home</a>
+        <a class="text-[#454840] hover:text-[#78866b] transition-all duration-200" href="#">Nosotros</a>
+        <a class="text-[#454840] hover:text-[#78866b] transition-all duration-200" href="#">Agenda</a>
+        <a class="text-[#454840] hover:text-[#78866b] transition-all duration-200" href="#">Contacto</a>
+      </div>
+      <button
+        class="bg-primary text-on-primary px-8 py-2.5 rounded-full font-semibold text-sm scale-95 active:scale-90 transition-transform hover:opacity-90">
+        Únete
+      </button>
+    </div>
+  </nav>
+  <main>
+    <!-- Sanctuary Hero Section -->
+    <section
+      class="relative min-height-[921px] flex flex-col justify-end pt-32 pb-20 px-6 max-w-7xl mx-auto overflow-hidden">
+      <div class="absolute top-20 right-0 w-2/3 h-[716px] rounded-bl-[10rem] overflow-hidden z-0">
+        <img alt="Sacred Sanctuary Light" class="w-full h-full object-cover grayscale-[0.2] brightness-90"
+          data-alt="Modern minimalist architectural light in sacred space"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfru9xyuYi7-H6K3yvCEqVbTXfukwhaLLCZvkjG18gSJg7yVhgm144KoAcdCk-F3MFUbuXqMP0V4vpQKqOG8gXSUVv-xHVLm4TJk3bggYwCEgh1N3fDd7d82-t5w-sk21Pr1kf-bxUfZhqVIUgIbHXIGUBmL52PuK-EQ8B6XBkW2RdlnXvMg3VS-iK7iV4H-3RRitHDkiZxrFSZh02UkgfW9Xq8u7j4qaKqiiVcxgsJEchsfKbfCp59rzpEra_itx71N5xT2B9Oes" />
+        <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl">
+        <span class="label-md uppercase tracking-[0.2em] font-bold text-primary mb-6 block">Comunidad &amp;
+          Espiritualidad</span>
+        <h1 class="text-7xl md:text-8xl font-extrabold leading-[0.9] tracking-tighter text-on-surface mb-8">
+          Donde lo espiritual se vuelve <span class="text-primary italic font-light">arte.</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-on-surface-variant max-w-xl leading-relaxed font-light mb-12">
+          Una comunidad moderna que vive la fe con sencillez y autenticidad en el corazón de Terrassa.
+        </p>
+        <div class="flex flex-wrap gap-6">
+          <button
+            class="bg-primary text-on-primary px-10 py-5 rounded-full text-lg font-bold shadow-xl hover:translate-y-[-2px] transition-all">
+            Visítanos este Domingo
+          </button>
+          <button class="flex items-center gap-3 text-on-surface font-bold text-lg px-6 py-5 group">
+            <span
+              class="material-symbols-outlined text-primary bg-primary/10 p-3 rounded-full group-hover:bg-primary group-hover:text-on-primary transition-colors">play_arrow</span>
+            Conoce nuestra historia
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Bento Grid: Experiences -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+      <div class="mb-20">
+        <h2 class="text-4xl font-extrabold tracking-tight mb-4">La esencia de Edén</h2>
+        <div class="w-24 h-1.5 bg-primary rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <!-- Large Feature Card -->
+        <div
+          class="md:col-span-8 bg-surface-container-low rounded-[2.5rem] p-12 flex flex-col justify-between overflow-hidden relative group">
+          <div class="relative z-10">
+            <span
+              class="bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block">Música
+              &amp; Alabanza</span>
+            <h3 class="text-5xl font-bold text-on-surface mb-6 leading-tight max-w-md">Una atmósfera pensada para
+              conectar.</h3>
+            <p class="text-on-surface-variant text-lg max-w-sm mb-8 leading-relaxed">Nuestras reuniones dominicales son
+              una experiencia sensorial de paz y reflexión profunda.</p>
+            <a class="inline-flex items-center gap-2 text-primary font-bold group-hover:gap-4 transition-all"
+              href="#">Explorar la Agenda <span class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+          <div
+            class="absolute bottom-[-10%] right-[-5%] w-1/2 h-full opacity-20 group-hover:opacity-100 transition-opacity duration-700">
+            <img alt="Worship Culture" class="w-full h-full object-cover rounded-tl-[5rem]"
+              data-alt="Live worship music atmosphere in a modern setting"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1jHFzEzibj_YTrMchsqwql0e2fBWlYkBIgSxABvhWDVcXqZcAFvH7DhmqJXLj084gmMGvwaRzYFu9_4Nmv7WuiOWAOjmjVpNpLqz_x31YTjyq9ZxYgUBgd0SilpLBOIOllh3d2YPqwb0To-ow0LKKMUa2nvhVS714rrucAIR8euAtVrSbqltB71yNeMTbkDZKDTQxPHFGFcywDECIQHs3g8HoNUcN8Xpr4htTLVf6ehJnykbE2paSkxbgQXzUWuD_XRqPECTDHM4" />
+          </div>
+        </div>
+        <!-- Secondary Card -->
+        <div
+          class="md:col-span-4 bg-primary-container text-on-primary-container rounded-[2.5rem] p-10 flex flex-col justify-end relative overflow-hidden">
+          <div
+            class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10">
+          </div>
+          <div class="relative z-10">
+            <span class="material-symbols-outlined text-5xl mb-6"
+              style="font-variation-settings: 'FILL' 1;">groups</span>
+            <h3 class="text-3xl font-bold mb-4">Grupos de Conexión</h3>
+            <p class="opacity-90 leading-relaxed font-light mb-6">Pequeñas comunidades orgánicas que se reúnen durante
+              la semana para compartir la vida.</p>
+            <button class="bg-surface text-primary w-full py-4 rounded-xl font-bold">Unirse a un grupo</button>
+          </div>
+        </div>
+        <!-- Tertiary Cards Row -->
+        <div class="md:col-span-4 bg-surface-container-highest rounded-[2.5rem] p-10 flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-bold text-on-surface mb-3">Arte y Fe</h3>
+            <p class="text-on-surface-variant leading-relaxed">Exploramos la espiritualidad a través de la creatividad,
+              el diseño y la expresión plástica.</p>
+          </div>
+          <div class="mt-8 flex justify-end">
+            <span class="material-symbols-outlined text-primary/30 text-8xl">palette</span>
+          </div>
+        </div>
+        <div
+          class="md:col-span-8 bg-surface-container-low rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row items-stretch">
+          <div class="p-12 flex-1">
+            <h3 class="text-3xl font-bold mb-4">Mensajes de hoy</h3>
+            <p class="text-on-surface-variant mb-8 font-light">Accede a nuestra biblioteca de enseñanzas que desafían el
+              pensamiento y nutren el alma.</p>
+            <div class="space-y-4">
+              <div
+                class="flex items-center gap-4 p-4 bg-surface rounded-2xl hover:shadow-md transition-shadow cursor-pointer">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined">mic</span>
+                </div>
+                <div>
+                  <p class="font-bold text-sm">El arte de la quietud</p>
+                  <p class="text-xs text-on-surface-variant opacity-70">Pr. Marc Rosas • 24 Min</p>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-4 p-4 bg-surface rounded-2xl hover:shadow-md transition-shadow cursor-pointer">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined">mic</span>
+                </div>
+                <div>
+                  <p class="font-bold text-sm">Identidad en el caos</p>
+                  <p class="text-xs text-on-surface-variant opacity-70">Pr. Marc Rosas • 18 Min</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 min-h-[250px] relative">
+            <img alt="Sermon Library" class="w-full h-full object-cover"
+              data-alt="Person sitting in a peaceful modern library setting"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc1m1WifePsESHzhLuVGrzC4sh3ufKD8MtCaD9vQiLKvbFfsEFCep2ri1vfF7NOBFmh4P8PdW8D9joKbdSv-74GjI7_q5-wLfwlyhGj5Xq-nPevES0lbEebDpeCWuf4t1a-U2tR9cMg9FFRR8zV0vqG5j0RwfnksZCBMZJB4mjzJ1lgjjYf1s9s_-tixdlOrm9T82KhcpXpUh0ZNNx0At8c47R58k9tLAlIqhDJa-I07Q81uVVrrUuKLAYMBh0KMuL0G9CtguOmRs" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Location Section -->
+    <section class="py-24 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+        <div>
+          <span class="text-primary font-bold uppercase tracking-[0.2em] mb-4 block">Visítanos</span>
+          <h2 class="text-5xl font-extrabold tracking-tight mb-8">Un lugar para todos los buscadores.</h2>
+          <div class="space-y-10">
+            <div class="flex gap-6">
+              <div class="text-primary"><span class="material-symbols-outlined text-4xl">location_on</span></div>
+              <div>
+                <p class="font-bold text-xl mb-1">Calle de la Fe, 12</p>
+                <p class="text-on-surface-variant">08221 Terrassa, Barcelona</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <div class="text-primary"><span class="material-symbols-outlined text-4xl">schedule</span></div>
+              <div>
+                <p class="font-bold text-xl mb-1">Domingos • 11:30h</p>
+                <p class="text-on-surface-variant">Reunión Principal &amp; Edén Kids</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 flex gap-4">
+            <button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold flex items-center gap-2">
+              Cómo llegar <span class="material-symbols-outlined text-sm">open_in_new</span>
+            </button>
+          </div>
+        </div>
+        <div class="h-[500px] rounded-[3rem] overflow-hidden shadow-2xl relative">
+          <img alt="Map of Terrassa" class="w-full h-full object-cover grayscale"
+            data-alt="Aesthetic aerial view of a clean modern city layout" data-location="Terrassa"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlUSI6q_PniPBY8bKMu587Fu_5i3Jzkp8vnZLVbwcEO_Csya9oS_85iFUJQwZ22qmQSjbTsgnrcT0PwfImRVNtrvCT11f99lXjDnvfxF1ODVRH_rH75pfOSjPbk6Firz08GS_TXqDQ2XfTJOaYUwoPsAZvDSyt8iovpKfcSfmgyLMo2zneO_d1UZ25MscwWgff20bqhyKVIulA3_ZfiEeVLDBaOsooudzOgojjaGOtjUeKiSc386ZZ28dmgiM8PbAeo5XXU15XN_g" />
+          <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter / CTA -->
+    <section class="py-32 px-6">
+      <div
+        class="max-w-5xl mx-auto bg-[#1b1c1a] rounded-[3rem] p-12 md:p-24 text-center text-surface overflow-hidden relative">
+        <div
+          class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2">
+        </div>
+        <div class="relative z-10">
+          <h2 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 leading-none">Únete al movimiento.</h2>
+          <p class="text-xl opacity-70 mb-12 max-w-2xl mx-auto">Suscríbete para recibir noticias sobre eventos
+            especiales, reflexiones semanales y vida comunitaria.</p>
+          <form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+            <input
+              class="bg-surface/10 border-0 rounded-2xl py-5 px-8 flex-1 focus:ring-2 focus:ring-primary text-surface placeholder:text-surface/40"
+              placeholder="Tu correo electrónico" type="email" />
+            <button
+              class="bg-primary text-on-primary font-bold px-10 py-5 rounded-2xl hover:opacity-90 transition-all">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="w-full py-12 px-6 mt-20 bg-[#fbf9f5]">
+    <div class="bg-[#f1eee4] h-px w-full mb-12"></div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+      <div class="flex flex-col gap-4">
+        <span class="text-xl font-bold text-[#536047]">Edén Terrassa</span>
+        <p class="text-sm font-manrope text-[#454840]">Un espacio sagrado para la vida moderna. Bienvenidos a casa.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <p class="font-bold text-primary">Navegación</p>
+        <div class="flex flex-col gap-2 font-manrope text-sm">
+          <a class="text-[#454840] opacity-70 hover:opacity-100 transition-colors" href="#">Instagram</a>
+          <a class="text-[#454840] opacity-70 hover:opacity-100 transition-colors" href="#">Privacidad</a>
+          <a class="text-[#454840] opacity-70 hover:opacity-100 transition-colors" href="#">Contacto</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4 text-right md:text-right text-left">
+        <p class="text-sm text-[#454840] opacity-70">© 2024 Edén Terrassa. El Sagrado Santuario.</p>
+        <div class="flex gap-6 justify-start md:justify-end text-primary">
+          <span class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity">public</span>
+          <span
+            class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity">volunteer_activism</span>
+          <span class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity">mail</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
